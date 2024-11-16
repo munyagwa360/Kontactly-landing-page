@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Animations */
+.animated-logo {
+    animation: bounce 2s infinite;
+}
+.animated-text {
+    animation: fade-in 2s ease-in-out;
+}
+.feature-list .animated-card {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slide-up 1.5s forwards;
+    animation-delay: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #090909, #090909);
+    color: #fff;
+    padding: 50px 20px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.cta-btn, .secondary-btn {
+    background-color: #fff;
+    color: #270101;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cta-btn:hover {
+    background-color: #c8e6c9;
+}
+.secondary-btn {
+    background-color: #090909;
+    color: #fff;
+}
+.secondary-btn:hover {
+    background-color: #090909;
+}
+
+/* Features Section */
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.feature-list .feature {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background: #090909;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Keyframes */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
